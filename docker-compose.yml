@@ -1,5 +1,5 @@
 elasticsearch:
-  image: elasticsearch:latest
+  image: rpidockers/elasticsearch:latest
   command: elasticsearch -Des.network.host=0.0.0.0
   ports:
     - "9200:9200"
@@ -14,6 +14,7 @@ logstash:
     - "5000:5000"
   links:
     - elasticsearch
+
 kibana:
   build: kibana/
   volumes:
