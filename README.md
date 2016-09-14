@@ -16,7 +16,9 @@ Uses Docker images which support Raspberry Pi based on the official images:
 
 1. Install [Docker](http://docker.io) on Raspberry Pi.
 2. Install [Docker-compose](http://docs.docker.com/compose/install/) on Raspberry Pi.
-3. Clone this repository on Raspberry Pi
+3. Clone this repository on Raspberry Pi.
+
+*NOTE*: Give a try to [HypriotOS](http://blog.hypriot.com/) if you want to easily install Docker on your Raspberry Pi.
 
 
 # Usage
