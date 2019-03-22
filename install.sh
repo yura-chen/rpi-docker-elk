@@ -13,9 +13,9 @@ sudo sh get-docker.sh
 sudo pip3 install -U docker-compose
 #sudo docker-compose -f docker-compose-profess.yml pull ofw
 sudo usermod -a -G docker $USER
-sudo reboot
 
-sudo cat >> /etc/systemd/system/docker-compose-app.service <<EOL
+
+sudo dd of=/etc/systemd/system/docker-compose-app.service <<EOL
 [Unit]
 Description=Docker Compose Application Service
 Requires=docker.service
@@ -34,4 +34,4 @@ StartLimitBurst=3
 WantedBy=multi-user.target
 EOL
 
-
+sudo reboot
